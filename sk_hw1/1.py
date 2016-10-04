@@ -12,10 +12,10 @@ print "Features:",X.shape[1]
 #print X
 
 ''' 1b '''
-#plt.hist(X)
-#plt.show()
+plt.hist(X)
+plt.show()
 
-print Xpart
+#print Xpart
 
 '''1c '''
 a= np.array(X)
