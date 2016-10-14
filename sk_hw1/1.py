@@ -12,8 +12,9 @@ print "Features:",X.shape[1]
 #print X
 
 ''' 1b '''
-plt.hist(X)
-plt.show()
+for i in range(4):
+    plt.hist(X[:,i])
+    plt.show()
 
 #print Xpart
 
@@ -30,8 +31,8 @@ print "xstd",xstd
 
 '''1e'''
 # subtract mean value from each feature
-print a-xmean
 xnorm= (a-xmean)/xstd
+np.set_printoptions(suppress=True)
 print xnorm
 
 '''1f'''
